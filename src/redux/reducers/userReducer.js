@@ -16,7 +16,7 @@ export const userReducer = (state=initalState, {type, payload}) => {
 export const selecteduserReducer = (state={}, {type, payload}) => {
     switch (type) {
         case ActionTypes.SELECTED_USER:
-            return {...state, user:payload}    
+            return {...state, payload}    
         default:
             return state
     }

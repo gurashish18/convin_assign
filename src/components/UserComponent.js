@@ -9,7 +9,7 @@ function UserComponent() {
   const renderList = users.map((user)=>{
     const { id } = user;
     return(
-        <Link to={`/user/${id}`}>
+        <Link to={`/user/${id}`} key={id}>
           <button className='btn'>Get user {c++}</button>
         </Link>
     ) 
